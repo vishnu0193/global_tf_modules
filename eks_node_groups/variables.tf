@@ -3,22 +3,23 @@ variable "cluster-name" {
   description = "cluster name"
 
 }
-variable "vpc-subnet-cidr" {
+variable "node_group_name" {
   type  = "string"
-  description = "subnet cidr range"
+  description = "Worker node group name"
 }
 
 variable "eks-cw-logging" {
   type = "string"
 }
 
-
-
-variable "sg_id" {
-  default = [""]
-}
-
 variable "sub_id" {
   default = [""]
 }
 
+variable "sg_node" {
+  type = "list"
+}
+
+variable "user_data" {
+  type = "string"
+}

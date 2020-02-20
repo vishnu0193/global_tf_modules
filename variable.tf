@@ -49,3 +49,8 @@ variable "availability_zones" {
     "ap-south-1b"]
 }
 
+variable "node_group_name" {
+  type  = "string"
+  description = "Worker node group name"
+  default = "test-group"
+}

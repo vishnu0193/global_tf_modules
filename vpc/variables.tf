@@ -19,3 +19,9 @@ variable "instance_tenancy" {
   default = "default"
 
 }
+
+variable "public_subnets_tag" {
+  type  = "string"
+  description = "vpc cidr range"
+}
+
